@@ -92,3 +92,10 @@ ros2 run rclrs_examples rclrs_subscriber
 ```
 
 Enjoy!
+
+### Run tests
+
+In order to run tests for the library run the command below
+```
+cargo test --lib
+```
