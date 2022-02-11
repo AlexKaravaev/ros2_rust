@@ -14,7 +14,7 @@ jobs:
 
       - name: Generate code coverage
         run: |
-          ls && cargo +nightly tarpaulin --verbose --all-features --lib --timeout 120 --out Xml
+          cd rclrs && cargo +nightly tarpaulin --verbose --all-features --lib --timeout 120 --out Xml
 
       - name: Upload to codecov.io
         uses: codecov/codecov-action@v2
